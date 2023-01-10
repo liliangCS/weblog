@@ -1,0 +1,163 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../assets/image/login_bgc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-box {
+  width: 400px;
+  padding: 40px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+
+  h2 {
+    margin-bottom: 40px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.user-box {
+  position: relative;
+
+  input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+  }
+
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.2s;
+  }
+
+  input:focus + label,
+  input:valid + label,
+  input:hover + label {
+    top: -20px;
+    left: 0;
+    color: #19caad;
+    font-size: 14px;
+  }
+}
+
+.submit {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #19caad;
+  font-size: 16px;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 30px;
+  letter-spacing: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background: #19caad;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #19caad, 0 0 25px #19caad, 0 0 50px #19caad, 0 0 100px #19caad;
+  }
+
+  span {
+    position: absolute;
+    display: block;
+  }
+
+  span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #19caad);
+    animation: btn-anim1 1s linear infinite;
+  }
+
+  span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #19caad);
+    animation: btn-anim2 1s 0.25s linear infinite;
+  }
+
+  span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #19caad);
+    animation: btn-anim3 1s 0.5s linear infinite;
+  }
+
+  span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #19caad);
+    animation: btn-anim4 1s 0.75s linear infinite;
+  }
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
