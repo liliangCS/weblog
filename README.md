@@ -14,3 +14,6 @@
 
 - 第一步：`npm i`
 - 第二步：`npm start`
+
+## FAQ
+- 如果因为格式报错，请先运行`npm run prettier`，然后再启动项目
