@@ -1,9 +1,23 @@
 .login {
+  position: relative;
   width: 100vw;
   height: 100vh;
   background-image: url("../../assets/image/login_bgc.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.login-logo {
+  width: 85px;
+  height: 116px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-image: url(../../assets/image/login_model.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .login-box {
@@ -32,7 +46,7 @@
   input {
     width: 100%;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1px;
     color: #fff;
     margin-bottom: 30px;
@@ -45,7 +59,7 @@
     top: 0;
     left: 0;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
     pointer-events: none;
     transition: 0.2s;
@@ -54,10 +68,10 @@
   input:focus + label,
   input:valid + label,
   input:hover + label {
-    top: -20px;
+    top: -25px;
     left: 0;
     color: #19caad;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
